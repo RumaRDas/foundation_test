@@ -1,31 +1,108 @@
+@font-face { font-family: Game of Thrones; src: url('Game of Thrones.TTF'); } 
+body{
+  background-color: #EFAD99 !important;
+  text-align: center;
+}
+#header{
+  background-color: #EFAD99 !important;
+  padding: 20px;
+  padding-top: 20px;
+}
+#header h1{
+  color:#914223;
+  font-family: 'Game of Thrones';
+ font-size: 60;
 
-.mobile-app-toggle {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    border: 1px solid #1779ba;
-    border-radius: 0.625rem;
-    overflow: hidden;
-    margin-bottom: 1rem;
+}
+.gstyle{
+  font-size: 70px;
+  font-weight: bold;
+
   }
+ li{
+   color: black;
+ }
+   .textbody{
+    width: 80%;
+   height: auto;
+   padding-top: 30px;
   
-  .mobile-app-toggle .button {
-    background: transparent;
-    color: #1779ba;
-    margin-bottom: 0;
-    -webkit-flex: 1 0 0;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
   }
-  
-  .mobile-app-toggle .button:nth-child(n+1) {
-    border-left: 1px solid #1779ba;
+  .searchbar{
+    text-align: center;
+    background-color: #EFAD99 !important;
+
   }
+  /*sticky footer css*/
   
-  .mobile-app-toggle .button.is-active {
-    background: #1779ba;
-    color: #fefefe;
-  }
-  
-  
+.sticky-footer-css {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sticky-footer-css-body {
+  overflow: auto;
+}
+
+.sticky-footer-css .header {
+  background-color: #914223;
+ 
+  color: black;
+  padding: 3rem;
+  font-family: Cambria;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sticky-footer-css .header .menu a {
+  color: black;
+}
+.sticky-footer-css .header .menu a:hover {
+  color: white;
+  background: #914223;
+}
+
+.sticky-footer-css .body-content {
+  background-color: #fff;
+}
+
+.sticky-footer-css .footer {
+  height: 70px;
+  width:100% ;
+  background-color: #914223;
+  color: #fff;
+
+}
+
+.sticky-footer-css .footer .menu a {
+  color: #fff;
+}
+.searchrow{
+ 
+  text-align: center;
+ padding-left: auto;
+}
+.searchstyle{
+  background-color:  #EFAD99 !important;
+  border: none;
+  width:50%;
+}
+.btnstyle{
+  background-color: #b3c9d2;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 30px;
+  width:200px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.logo{
+  width: 100px;
+height:60px;
+padding: 5px;
+padding-top: 10px;
+}
