@@ -1,40 +1,158 @@
-@font-face { font-family: Game of Thrones; src: url('Game of Thrones.TTF'); } 
-body{
-  background-color: #EFAD99 !important;
+/* BASE STYLES */
+
+body {
+  /* margin-top: 10px; */
+  background-color: #b3c9d2 !important;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
-#header{
-  background-color: #EFAD99 !important;
+
+.app-logo {
+  width: 270px;
+  height: 200px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.textbody {
+  width: 80%;
+  height: auto;
+  padding-top: 30px;
+}
+
+.header {
+  background-color: #b3c9d2 !important;
   padding: 20px;
   padding-top: 20px;
 }
-#header h1{
-  color:#914223;
-  font-family: 'Game of Thrones';
- font-size: 60;
 
+.hero {
+  z-index: -1;
 }
-.gstyle{
-  font-size: 70px;
+
+/* SEARCH FIELD STYLES */
+
+.searchInput {
+  color: #9b2c33;
   font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 0px;
+}
 
-  }
- li{
-   color: black;
- }
-   .textbody{
-    width: 80%;
-   height: auto;
-   padding-top: 30px;
-  
-  }
-  .searchbar{
-    text-align: center;
-    background-color: #EFAD99 !important;
+.searchrow {
+  margin-top: 55px;
+  background-color: #b3c9d2 !important;
+  border: none;
+  position: relative;
+  left: 15%;
+  top: 50%;
+  width: 70%;
+}
 
-  }
-  /*sticky footer css*/
-  
+.btnStyle {
+  background-color: #110f15;
+  color: #efad99;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 0;
+}
+
+.btnStyle:hover {
+  background-color: #efad99;
+  color: #9b2c33;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 0;
+}
+
+/* MENU STYLES */
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  background: #9b2c33;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 40px 40px;
+}
+
+.menu a:hover {
+  color: #914223;
+  background: #efad99;
+}
+.menu a:active {
+  color: #914223;
+  background: #efad99;
+}
+
+.menu .is-active > a {
+  background: #efad99;
+  color: #914223;
+}
+
+li {
+  color: #110f15;
+  font-family: "Montserrat", serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0 20px;
+  align-content: center;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+/* USER REGISTRATION */
+
+.register-row {
+  margin-top: 25px;
+  position: relative;
+  left: 45%;
+  width: 100%;
+}
+
+.registerBtnStyle {
+  background-color: #110f15;
+  color: #efad99;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 10px;
+  box-shadow: 5px 5px;
+}
+
+.registerBtnStyle:hover {
+  background-color: #efad99;
+  color: #110f15;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 20px;
+  width: 150px;
+  height: 60px;
+  margin: 10px 10px;
+  box-shadow: 5px 5px;
+}
+
+/* STICKY FOOTER STYLES*/
+
 .sticky-footer-css {
   height: 100vh;
   display: -webkit-flex;
@@ -42,67 +160,182 @@ body{
   display: flex;
 }
 
-.sticky-footer-css-body {
-  overflow: auto;
-}
-
-.sticky-footer-css .header {
-  background-color: #914223;
- 
-  color: black;
-  padding: 3rem;
-  font-family: Cambria;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.sticky-footer-css .header .menu a {
-  color: black;
-}
-.sticky-footer-css .header .menu a:hover {
-  color: white;
-  background: #914223;
-}
-
-.sticky-footer-css .body-content {
-  background-color: #fff;
-}
-
-.sticky-footer-css .footer {
-  height: 70px;
-  width:100% ;
-  background-color: #914223;
-  color: #fff;
-
-}
-
-.sticky-footer-css .footer .menu a {
+.sticky-footer {
+  margin-top: 25px;
+  padding: 20px 0;
+  height: 150px;
+  width: 100%;
+  background-color: #110f15;
   color: #fff;
 }
-.searchrow{
- 
-  text-align: center;
- padding-left: auto;
-}
-.searchstyle{
-  background-color:  #EFAD99 !important;
-  border: none;
-  width:50%;
-}
-.btnstyle{
-  background-color: #b3c9d2;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding-left: 30px;
-  width:200px;
-  height: 40px;
-  margin-left: 10px;
-}
 
-.logo{
+.logo {
   width: 100px;
-height:60px;
-padding: 5px;
-padding-top: 10px;
+  height: 60px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+p.text-footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+/* MEDIA QUERIES */
+
+/* MOBILE VIEWORT */
+@media screen and (max-width: 39.9375em) {
+  .sticky-header-css .header {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+  }
+
+  .textbody {
+    width: 70%;
+    padding-top: 20px 0;
+  }
+
+  /* SEARCH FIELDS */
+
+  .searchrow {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: none;
+    position: relative;
+    left: 5%;
+    top: 50%;
+    width: 90%;
+  }
+
+  .searchInput {
+    color: #9b2c33;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 5px;
+    width: 100px;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .btnStyle {
+    font-size: 12px;
+    background-color: #110f15;
+    color: #efad99;
+    align-content: center;
+    padding: 5px 5px;
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  .btnStyle:hover {
+    font-size: 12px;
+    padding: 5px 5px;
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  .sticky-footer-css {
+    height: 100vh;
+    display: flex;
+  }
+
+  .sticky-footer {
+    margin-top: 25px;
+    padding: 20px 0;
+    height: 100px;
+    width: 100%;
+    background-color: #110f15;
+    color: #fff;
+  }
+
+  /* MENU STYLE */
+  .menu a {
+    padding: 22px 20px;
+    font-size: 10px;
+  }
+
+  li {
+    font-size: 10px;
+    padding: 0 2px;
+  }
+
+  .header {
+    padding: 10px;
+    padding-top: 10px;
+  }
+
+  /* FOOTER STYLES */
+  .logo {
+    width: 60px;
+    height: 40px;
+  }
+
+  p.text-footer {
+    font-size: 8px;
+    padding-top: 5px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  /* REGISTRATION STYLES */
+  .register-row {
+    margin-top: 25px;
+    border: none;
+    position: relative;
+    left: 35%;
+    width: 100%;
+  }
+}
+/*FORM REGISTRATION STYLE*/
+.form_style{
+  width: 40%;
+  background-color: #efad99;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  margin: auto
+
+}
+
+#test-eq{
+justify-content: center;
+align-items: center;
+z-index: 2;
+margin-left: auto;
+display:none ;
+
+
+
+}
+
+/* TABLET VIEWPORT */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .menu a {
+    margin: 15px 0;
+    padding: 25px 25px;
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+
+.results {
+  font-size: 30px;
 }
